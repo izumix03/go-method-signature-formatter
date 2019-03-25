@@ -10,6 +10,10 @@ import com.intellij.openapi.editor.actionSystem.EditorWriteActionHandler;
  * @author Vojtech Krasa
  */
 public class FormatGoMethodSignature extends EditorAction {
+    public FormatGoMethodSignature() {
+        this(true);
+    }
+
     public FormatGoMethodSignature(boolean setupHandler) {
         super(null);
         if (setupHandler) {
@@ -43,11 +47,6 @@ public class FormatGoMethodSignature extends EditorAction {
                 .replaceAll("(?<!\\n)\\)", ",\n)")
                 .replaceAll(",(?!\\n)", ",\n\t");
     }
-
-    public FormatGoMethodSignature() {
-        this(true);
-    }
-
 
     private void applyChanges(Editor editor, SelectionModel selectionModel, String newText) {
         editor.getDocument().replaceString(
