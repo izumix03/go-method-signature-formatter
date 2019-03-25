@@ -1,0 +1,21 @@
+<idea-plugin>
+    <id>io.github.izumix03.go-method-signature-formatter</id>
+    <name>go-method-signature-formatter</name>
+    <vendor url="http://github.com/izumix03">izumix03</vendor>
+
+    <depends>com.intellij.modules.lang</depends>
+
+    <description><![CDATA[
+    <p>format go method signature smartly........</p>
+    ]]></description>
+
+    <extensions defaultExtensionNs="com.intellij">
+    </extensions>
+
+    <actions>
+        <action id="FormatGoMethodSignature" class="FormatGoMethodSignature" text="FormatGoMethodSignature">
+            <add-to-group group-id="RefactoringMenu" anchor="first"/>
+            <keyboard-shortcut keymap="$default" first-keystroke="ctrl alt L"/>
+        </action>
+    </actions>
+</idea-plugin>
