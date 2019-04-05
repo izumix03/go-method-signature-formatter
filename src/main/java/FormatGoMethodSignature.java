@@ -6,8 +6,7 @@ import com.intellij.openapi.editor.actionSystem.EditorAction;
 import com.intellij.openapi.editor.actionSystem.EditorWriteActionHandler;
 
 /**
- * @author Olivier Smedile
- * @author Vojtech Krasa
+ * @author izumix03
  */
 public class FormatGoMethodSignature extends EditorAction {
     public FormatGoMethodSignature() {
